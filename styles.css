@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.left-column {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 10vw;
+}
+
+.right-column {
+    padding: 47px;
+    width: 90vw;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-photo {
+    margin-right: 20px;
+}
+
+.profile-photo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.header-text h1 {
+    margin: 0;
+}
+
+.header-text p {
+    margin: 5px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+    padding: 25px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+section {
+    margin-bottom: 33px;
+}
+
+h2 {
+    color: #333;
+}
+section#projects {
+    width: 62vw;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+footer.visible {
+    visibility: visible;
+    opacity: 1;
+}
